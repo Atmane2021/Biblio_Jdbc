@@ -25,7 +25,8 @@ public class TestDeBase {
 
 	public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
 		
-		
+		Integer choixFinal;
+		do {
 	
 
 		String[] choix = {"Consulter le livre", "Consulter un utilisateur", "Emprunter un livre", "Disponibilité d'un exemplaire","Rendre un livre", "Emprunts en cours","Archives"};
@@ -77,6 +78,8 @@ public class TestDeBase {
 
 		}
 		
+		  choixFinal = JOptionPane.showConfirmDialog(null, "Voulez-vous continuer ?"); 
+		} while (choixFinal==0);
 		
 	}
 
